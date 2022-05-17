@@ -24,7 +24,8 @@ img {
   /* colors*/
   --hue: 159;
   /* HSL color mode*/
-  --base-color: hsl(var(--hue) 36% 57%);
+  /*--base-color: hsl(var(--hue) 36% 57%);*/
+  --base-color:#7FB5FF ;
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
@@ -38,6 +39,9 @@ img {
 
   --title-fonts: 'Poppins', sans-serif;
   --body-fonts: 'DM Sans', sans-serif;
+
+  --map-size:100%;
+ 
 }
 
 /* ================== BASE =======================*/
@@ -527,12 +531,35 @@ footer .social a:hover {
     grid-auto-flow: column;
   }
 }
+
+.card img {
+  height: 80px;
+  width: 80px;
+}
+.map{
+  width: 100% ;
+  height: 400px ;
+}
 /* large devices 1023 > */
+@media (min-width: 992px) {
+  :root {
+   
+    --mapSize: 100vw;
+    
+  }
+  .map{
+    width: 100% ;
+    height: 550px ;
+  }
+}
 /* large devices: 992 >*/
 @media (min-width: 992px) {
   :root {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
-  }
+
+    
+    
+  }  
 }
 /* medium devices 767 > */
